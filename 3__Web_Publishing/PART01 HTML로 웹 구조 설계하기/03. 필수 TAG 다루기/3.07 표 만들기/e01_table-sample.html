@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표(table)</title>
+  <style>
+    table{
+      /* collapse 겹치기 */
+      border-collapse:collapse; 
+      /* border-collapse: separate; */
+    }
+    th, td{
+      border:1px solid #ccc;
+    } 
+  </style>
+</head>
+<!--  
+  2차원 격자 형태로 구성된 데이터 표시
+  행(row), 열(column), 행과 열이 만나는 셀(cell)로 구성
+-->
+<body>
+<table>
+  <!-- 표의 제목 -->
+  <caption>가격표</caption>
+  <tr> <!--1행 생성-->
+    <th>번호</th><!--항목명-->
+    <th>상품명</th>
+    <th>수량</th>
+    <th>가격</th>
+  </tr>
+  <tr> <!--2행 생성-->
+    <td>1</td> <!--데이터-->
+    <td>콜라</td>
+    <td>1개</td>
+    <td>1,500원</td>
+  </tr>
+  <tr> <!--3행 생성-->
+    <td>2</td>
+    <td>사이다</td>
+    <td>2개</td>
+    <td>1,000원</td>
+  </tr>
+  <tr> <!--4행 생성-->
+    <td>3</td>
+    <td>탄산수</td>
+    <td>3개</td>
+    <td>1,000원</td>
+  </tr>
+</table>
+</body>
+</html>

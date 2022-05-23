@@ -1,0 +1,5 @@
+  
+  다운로드   : https://code.visualstudio.com
+  Settings   : Font(D2Coding), mouseWheelZoom(V), TabSize(2) 
+  Extensions : HTML Snippets, Auto Close Tag, Auto Rename Tag, HTML to CSS autocompletion, 
+               HTML CSS Support, CSS peek, Autoprefixer, Material Icon Theme, Guides, TabOut, indent-rainbow, Live Server
