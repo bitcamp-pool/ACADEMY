@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./dl.css">
+  <title>CSS</title>
+  <!-- 
+    [Cascading Style Sheet]
+    브라우저 : <h1>, <p> ... 브라우저에서 미리 정해 놓은 스타일
+    사용자
+      인라인 스타일: 적용할 대상에 직접 표시(style="" 속성사용)
+      내부 스타일 시트: 현재 페이지 안에서 적용(<style> 태그사용)
+      외부 스타일 시트: 여러 웹 문서에 사용할 스타일을 별도의 파일로 저장하여 적용(<link> 태그사용) 
+    
+    * 캐스케이딩: 태그의 포함 관계에 따라 부모 요소의 스타일이 자식    요소로, 위에서 아래로 전달하여 스타일 상속이 이루어진다.  
+  -->
+  <style>
+    /* 주석입니다. */
+    header{
+      text-align: center;
+      border: 1px solid gray;
+    }
+    h1{
+      color: gray;
+    }
+    dt{
+      color: yellowgreen;
+      font-weight: bold;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>웹 퍼블리싱</h1>
+  </header>
+  <dl>
+    <dt>CSS</dt>
+    <dd style="color: green;">CSS는 Cascading Style Sheets의 약자입니다.</dd>
+  </dl>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HTML은 Hyper Text Markup Language의 약자입니다.</dd>
+  </dl>
+</body>
+</html>

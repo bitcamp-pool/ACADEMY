@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인접 형제 선택자(adjacent sibling)</title>
+  <style>
+    /*
+      형제 요소 중에서 첫 번째 동생 요소만 선택
+      h1이후에 가장 먼저 오는 형제(h2)요소 선택 
+     */
+    h1 + h2{
+      color:red
+    }
+  </style>
+</head>
+<body>
+  <h1>lorem1</h1>
+  <h2>lorem2</h2>
+  <h2>lorem3</h2>
+</body>
+</html>

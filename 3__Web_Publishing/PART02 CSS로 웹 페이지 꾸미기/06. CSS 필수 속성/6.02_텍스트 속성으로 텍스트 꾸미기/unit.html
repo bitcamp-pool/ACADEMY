@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit</title>
+</head>
+<style>
+  html {
+    font-size: 64px;
+  }
+  div.outer {
+    padding: 5px;
+    background-color: yellowgreen;
+  }
+  div.inner {
+    font-size: 32px;
+  }
+  p {
+    /* 브라우저 기본 폰트 사이즈 */
+    /* font-size: 16px; */
+    font-size: 0.5em;
+    font-size: 0.5rem;
+  }
+</style>
+<body>
+  <!--  
+    절대단위(px:pixel): 모니터 화면을 구성하는 사각형 1개의 크기
+    상대단위
+      %  : width에 거의 사용
+      em : 부모요소의 텍스트 크기에 상대적인 비율값
+      rem: html(root)태그의 텍스트 크기에 상대적인 비율값
+  -->
+  <div class="outer">
+    <div class="inner">
+      <span>32px</span>
+      <p>16px</p>
+    </div>
+  </div>
+</body>
+</html>

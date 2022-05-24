@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>margin collpase</title>
+  <style>
+    body * {
+      border: 1px solid yellowgreen;
+    }
+    .first{
+      margin-bottom:20px;
+    }
+    .second{
+      margin-top:30px;
+    }
+    /* inline요소의 박스모델은 위/아래 마진 무효 */
+    span{
+      margin: 100px;
+    }
+  </style>
+</head>
+<!--  
+  마진 겹침 현상
+-->
+<body>
+  <p class="first">lorem1</p>
+  <p class="second">lorem2</p>
+
+  <span>inline1</span>
+  <span>inline2</span>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum odio voluptatibus rerum minima hic inventore vel possimus quia facilis exercitationem atque cum velit provident animi corrupti magni architecto, quis molestiae?</p>
+</body>
+</html>
