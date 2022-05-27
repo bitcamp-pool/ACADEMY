@@ -5,20 +5,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>relative</title>
+  <!-- position  
+  relative : 원래 있어야 할 위치(태그구조)로부터 상대적인 좌표
+  absolute : 담겨있는 상자(relative) 안에서의 절대적인 좌표
+  fixed    : 상자로부터 벗어나 페이지 상에서의 고정 좌표
+  -->
   <style>
+    body{margin: 0;}
     .box{
       width:100px;
       height:100px;
+      color: white;
     }
     .red-box{
       background-color:red;
     }
     .green-box{
       background-color:green;
-      position:relative;
-      left:100px;
-      /* top 속성 추가 */
-      /* top:100px; */
+      position: relative;
+      left: 100px;
+      /* top:  100px; */
     }
     .blue-box{
       background-color:blue;
@@ -26,8 +32,8 @@
   </style>
 </head>
 <body>
-  <div class="box red-box"></div>
-  <div class="box green-box"></div>
-  <div class="box blue-box"></div>
+  <div class="box red-box">(0, 0)</div>
+  <div class="box green-box">(0, 100)</div>
+  <div class="box blue-box">(0, 200)</div>
 </body>
 </html>

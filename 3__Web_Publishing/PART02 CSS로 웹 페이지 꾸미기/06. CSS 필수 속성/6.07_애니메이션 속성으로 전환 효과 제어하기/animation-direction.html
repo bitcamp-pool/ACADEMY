@@ -12,9 +12,21 @@
       background-color:red;
       animation-name:bgchange;
       animation-duration:5s;
-      animation-fill-mode:forwards;
+      animation-delay: 1s;
       animation-iteration-count:3;
-      animation-direction:reverse;
+      animation-iteration-count: infinite;
+
+      /* 원래 상태에서 원래 상태로 */
+      /* animation-fill-mode: none;  */
+      
+      /* 애니메이션의 종료 상태(실무에서 가장 많이 쓴다.) */ 
+      /* animation-fill-mode:forwards; */
+      animation-fill-mode: both;
+
+      /* 시작지점의 스타일을 유지*/
+      /* animation-fill-mode:backwards; */
+
+      /* animation-direction:reverse; */
     }
     @keyframes bgchange{
       0%{background-color:red;}

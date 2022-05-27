@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>absolute</title>
+  <!-- position  
+  relative : 원래 있어야 할 위치(태그구조)로부터 상대적인 좌표
+  absolute : 담겨있는 상자(relative) 안에서의 절대적인 좌표
+  fixed    : 상자로부터 벗어나 페이지 상에서의 고정 좌표
+  -->
   <style>
     body{
       margin:0;
@@ -12,25 +17,52 @@
     .box{
       width:100px;
       height:100px;
+      color: white;
+      /* display: inline-block; */
     }
     .red-box{
-      background-color:red;
+      background-color:crimson;
     }
     .green-box{
-      background-color:green;
-      position:absolute;
-      left:100px;
-      /* top 속성 추가 */
-      /* top:100px; */
+      background-color:yellowgreen;
+      /* position: relative;
+      left: 50px;
+      top: -50px; */
+      position: absolute;
+      left: 50px;
+      top: 50px;
     }
     .blue-box{
-      background-color:blue;
+      background-color:dodgerblue;
+      position: relative;
+      left: 100px;
+    }
+    .parent{
+      width: 300px;
+      height: 300px;
+      margin: 30px;
+      border: 1px solid #ccc;
+
+      /* 부모요소 */
+      /* position: relative; */
+    }
+    .yellow-box{
+      background-color:gold;
+
+      /* 자식요소 */
+      position: absolute;
+      left: 30px;
+      top: 30px;
     }
   </style>
 </head>
 <body>
-  <div class="box red-box"></div>
-  <div class="box green-box"></div>
-  <div class="box blue-box"></div>
+  <div class="box red-box">r(0, 0)</div>
+  <div class="box green-box">g(0, 100)</div>
+  <div class="box blue-box">b(0, 200)</div>
+
+  <div class="parent">
+    <div class="box yellow-box"></div>
+  </div>
 </body>
 </html>

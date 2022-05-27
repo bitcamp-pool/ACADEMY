@@ -6,14 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>background-image</title>
   <style>
-    div{
+    .d1{
+      width:320px; /* 원본 이미지보다 2배 크게 설정 */
+      width: 550px;
+      height:120px;
+
+      /* 해당 이미지가 영역보다 작을 경우 반복해서 채워줌 */
+      background-image:url('images/coffee.jpg');
+    }
+    .d2{
       width:320px; /* 원본 이미지보다 2배 크게 설정 */
       height:120px;
-      background-image:url('images/coffee.jpg');
+      border: 1px solid #ccc;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div></div>
+  <div class="d1"></div>
+  <div class="d2">
+    <img src="./images/coffee.jpg" alt="">
+  </div>
 </body>
 </html>

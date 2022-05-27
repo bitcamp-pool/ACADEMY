@@ -10,11 +10,14 @@
       width:100px;
       height:100px;
       background-color:red;
+
+      /* 트랜지션 효과 대상 속성 */
       transition-property:background-color, color, width;
-      transition-duration:1s;
-      transition-delay:1s;
+      transition-duration:1s, 1s, 3s;
+      /* transition-delay:1s; */
     }
     .red-box:hover{
+      width: 150px;
       background-color:blue;
     }
   </style>

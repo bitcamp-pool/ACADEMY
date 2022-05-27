@@ -6,13 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>display</title>
   <style>
-    h1, h2{
-      display:inline;
+    h1, h2, h3, h4, h5, h6{
+      margin-left: 20px;
+      border: 1px solid #ccc;
+      display: inline;
+    }
+    /* display : block, inline, inline-block
+       박스모델의 속성(성질) 바꾸기 
+     */
+    div{
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border: 1px solid #ccc;
+      color: white;
+      background-color: yellowgreen;
+
+      /* box사이즈: 컨텐츠 크기만큼  */
+      display: inline;
+      
+      /* box사이즈: 설정 크기만큼  */
+      display: inline-block;
     }
   </style>
 </head>
 <body>
-  <h1>h1 tag</h1>
-  <h2>h2 tag</h2>
+  <h1>h1</h1>
+  <h2>h2</h2>
+  <h3>h3</h3>
+  <h4>h4</h4>
+  <h5>h5</h5>
+  <h6>h6</h6>
+  
+  <div>d1</div>
+  <div>d2</div>
+  <div>d3</div>
+  <div>d4</div>
+  <div>d5</div>
+  <div>d6</div>
 </body>
 </html>

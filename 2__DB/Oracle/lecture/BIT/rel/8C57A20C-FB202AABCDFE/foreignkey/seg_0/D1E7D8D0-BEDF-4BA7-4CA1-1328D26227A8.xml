@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D1E7D8D0-BEDF-4BA7-4CA1-1328D26227A8" containerWithKeyObject="1BB076BF-AD26-F970-80F1-A664394DF5DC" localFKIndex="27D30CB5-CDE4-F06B-49BF-F8A55C29E9C5" name="T_BIT_BOARD_FILE_T_BIT_BOARD_FK">
+<createdBy>bitcamp</createdBy>
+<createdTime>2022-05-25 06:34:45 UTC</createdTime>
+<ownerDesignName>BIT</ownerDesignName>
+<referredTableLongName>T_BIT_BOARD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>09893BD4-E8E9-E508-6E12-E4A51F58EE08</referredTableID>
+<keyObject>F4456E80-8680-512D-3A7C-8E6900E7EF67</keyObject>
+<referredKeyID>F4456E80-8680-512D-3A7C-8E6900E7EF67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BOARD_NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

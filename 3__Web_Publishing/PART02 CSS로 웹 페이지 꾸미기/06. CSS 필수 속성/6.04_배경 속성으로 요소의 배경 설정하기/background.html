@@ -5,10 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>background</title>
+  <!-- https://pixabay.com/ko/  
+    
+  -->
   <style>
-    div{
-      width:160px;
-      height:120px; 
+    html,
+    body{
+      margin: 0;
+      height: 100%;
+    }
+    body{
+      background-image: url("images/knight-3442900_640.jpg");
       /* 
       background-color:red;
       background-image:url('images/coffe.jpg');
@@ -17,11 +24,20 @@
       background-size:100% 100%;
       background-attachment:fixed; 
       */
-      background:red url('images/coffee.jpg') no-repeat center/100% 100% fixed;
+      /* background-repeat: repeat-x; */
+      /* background-repeat: repeat-y; */
+      /* background-position: bottom; */
+      /* background-position: center; */
+      /* background-position: top; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      /* background:red url('images/knight-3442900_640.jpg') no-repeat center/100% 100% fixed; */
     }
   </style>
 </head>
 <body>
-  <div></div>
+  
 </body>
 </html>
