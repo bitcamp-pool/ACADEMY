@@ -11,6 +11,7 @@ const person = {
 };
 console.log(person.name.lastName); // Hong 
 console.log(person.age);  // 20
+console.log(person["age"]);
 console.log(person.likes[0]);  // apple
 console.log(person.printHello());  // hello
 // console.log(person."name"); // SyntaxError: Unexpected string

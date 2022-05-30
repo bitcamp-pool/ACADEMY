@@ -3,3 +3,7 @@ let string2 = "문자열은 작은따옴표(')로 감싸면 됩니다.";
 
 console.log(string1);
 console.log(string2);
+
+string1 = "she's gone~";
+string2 = '"Hello!"';
+console.log(string1, string2);

@@ -24,11 +24,20 @@ num = 30;
 console.log("num=", num);
 
 
-/* 호이스팅(hoisting)
+/* 호이스팅(hoisting) : 선언부와 할당을 나누어서, 선언부를 최상위로 끌어 올리는 행위
   인터프리터가 변수와 함수의 메모리 공간을 선언 전에 미리 할당하는 것을 의미
   var 로 선언한 변수의 경우 호이스팅 시 undefined 로 변수를 초기화
 
   let은 호이스팅이 되지않는다.
  */
-console.log(url);
+// console.log(url); ReferenceError: Cannot access 'url' before initialization
 let url = 'www.google.com';
+console.log(url);
+
+var word;         // 선언부 <---- 최상위
+console.log("word = ", word); // 에러가 나지 않음
+// var word;      
+word = "Hello~";  // 할당부
+console.log("word = ", word);
+
+// let 사용권장

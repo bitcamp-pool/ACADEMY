@@ -1,3 +1,4 @@
+// 키와 값으로 이루어진 데이터 덩어리
 const person = {
   name:{
     firstName:"Gildong",
