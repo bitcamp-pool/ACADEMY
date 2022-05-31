@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red-color{
+      color: crimson;
+    }
+    .fz20{
+      font-size: 50px;
+    }
+  </style>
+</head>
+<body>
+  <p id="title">Hello, <span style="display: none;">Javascript!</span></p>
+  <p id="textContent">hello, </p>
+  <p id="innerText">hello, </p> <!--공백을 인지 못함-->
+  <p id="innerHTML"></p>
+  <button data-cnt="10">가방구매</button>
+  <button data-cnt="0">신발구매</button>
+
+  <!-- <p id="text" class="red-color fz20">text</p> -->
+  <p id="text" class="">text</p>
+  <script>
+    // 컨텐츠 가져오기
+    // const pEl = document.getElementById("title");
+    // const pEl = document.getElementsByTagName("p")[0];
+    
+    const pEl = document.querySelector("#title");
+    console.log(pEl.textContent); // 태그는 가져오지 않고 오로지 텍스트만
+    console.log(pEl.innerText);   // 눈에 보이는 것만 가져온다
+    console.log(pEl.innerHTML);   // 태그를 포함한 모든 노드를 가져온다
+
+    // 컨텐츠 수정하기
+    pEl.textContent = '     hello, new textContent!    ';
+    pEl.innerText   = '     hello, new innerText!    ';
+    pEl.innerHTML   = '     hello, new innerHTML!    ';
+
+    document.querySelector("#textContent").textContent += '<strong>textContent<strong>';
+    document.querySelector("#innerText").innerText += '<strong>innerText<strong>';
+    document.querySelector('#innerHTML').innerHTML = '<strong>innerHTML</strong>';
+
+    const htmlEl = document.querySelector("p#innerHTML");
+    console.log(htmlEl); 
+    htmlEl.style.color = 'green';
+
+    // htmlEl.style.background-color = 'gray'; '-'를 자바스크립트가 뺄셈 연산자로 인식
+    // Camel Case
+    htmlEl.style.backgroundColor = 'yellowgreen'; 
+    htmlEl.style.fontSize = '2rem';
+
+    const textEl = document.querySelector("#text");
+    // textEl.classList.add("red-color", "red-color");
+    textEl.classList.add("red-color", "fz20");
+    // textEl.classList.remove("red-color");
+    setInterval(()=>{
+      textEl.classList.toggle("red-color");
+    }, 1000);
+
+    const buttonEls = document.querySelectorAll("button");
+    buttonEls.forEach((el)=>{
+      console.log(el.dataset);
+    });
+  </script>
+</body>
+</html>

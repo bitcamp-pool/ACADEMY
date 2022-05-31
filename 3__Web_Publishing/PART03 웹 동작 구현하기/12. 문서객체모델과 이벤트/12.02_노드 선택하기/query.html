@@ -11,13 +11,17 @@
     <p class="text">text-1</p>
     <p class="text">text-2</p>
   </div>
-  <div class="box-2">
+  <div id="box-2">
     <p class="text">text-3</p>
     <p class="text">text-4</p>
   </div>
   <script>
     const el = document.querySelector(".box-1");
     // const el = document.getElementsByClassName("box-1")[0].children;
+
+    // 아이디, 클래스 이름에 종속적인 선택 극복(쿼리 셀렉터)
+    // 단일노드 선택시 querySelector
+    // 복수노드 선택시 querySelectorAll
     // const el = document.querySelectorAll(".box-1 .text");
     console.log(el);
   </script>
